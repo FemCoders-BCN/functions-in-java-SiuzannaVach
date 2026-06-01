@@ -3,7 +3,10 @@ public class Calculator {
     public static void main(String[] args) {
 
         //Ejecuta aquí todos los métodos creados e imprime en la terminal. 
-        
+        System.out.println(add(5, 3));
+        System.out.println(subtract(10, 4));
+        System.out.println(multiply(6, 7));
+        System.out.println(divide(20, 4));
     }
 
     //Define los métodos basándote en su doc comment.
@@ -19,7 +22,9 @@ public class Calculator {
      * Inside the function:
      * 1. sum 2 numbers
      */
-    
+    public static double add(double number1, double number2) {
+        return number1 + number2;
+    }
 
      //Ejercicio 2:
     /**
@@ -32,7 +37,9 @@ public class Calculator {
      * Inside the function:
      * 1. subtract 2 numbers
      */
-    
+    public static double subtract(double number1, double number2) {
+        return number1 - number2;
+    }
 
     //Ejercicio 3:
     /**
@@ -45,7 +52,9 @@ public class Calculator {
      * Inside the function:
      * 1. multiply 2 numbers
      */
-    
+    public static double multiply(double number1, double number2) {
+        return number1 * number2;
+    }
 
     //Ejercicio 4:
     /**
@@ -58,6 +67,13 @@ public class Calculator {
      * Inside the function:
      * 1. divide 2 numbers
      */
-    
+    public static double divide(double number1, double number2) {
+        if (number2 != 0) {
+            return number1 / number2;
+        } else {
+            System.out.println("Error: No se puede dividir por cero.");
+            return 0; // o podrías lanzar una excepción dependiendo de tu diseño
+        }
+    }
 
 }
