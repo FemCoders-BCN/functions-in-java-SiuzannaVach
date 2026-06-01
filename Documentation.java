@@ -7,6 +7,7 @@ public class Documentation {
     public static void main(String[] args) {
         greeting();
         System.out.println(greetingCoder("Alex", 41));
+        System.out.println(callingAGoddess("Atenea"));
     }
 
     /**
@@ -17,7 +18,7 @@ public class Documentation {
      * 
      */
     public static void greeting(){
-        System.out.println("Hola FemCoder");
+        System.out.println("Hola FemCoder!");
     }
 
     /**
@@ -35,17 +36,32 @@ public class Documentation {
         return "Hola mi nombre es " + name + " y tengo " + age + " años.";
      }
 
-     //Ejercicio 1: Escribe un método llamado "callingAGoddess" que devuelva un String con una descripción de cada diosa de la mitología griega y romana al pasarle por parámetro un nombre. Documenta la función.
-
-    /* 
-    Afrodita: Hola soy Afrodita, la diosa del amor y la belleza.
-    Atenea: Hola soy Atenea, la diosa de la sabiduría y la guerra estratégica.
-    Artemisa: Hola soy Artemisa, la diosa de la caza y la naturaleza salvaje
-    Hera: Hola soy Hera, la diosa de los dioses y de la familia.
-    Deméter: Hola soy Deméter, la diosa de la cosecha y la agricultura.
-    Perséfone: Hola soy Perséfone, la diosa de la primavera y el inframundo.
-    Otro o vacío: ¡no la hemos encontrado aún!
-    */
-     
-
+     /**
+     * Function name: callingAGoddess
+     * 
+     * @param name (String)
+     * @return (String)
+     * 
+     * Inside the function:
+     * 1. return a description of the goddess based on her name
+     * 
+     */
+    public static String callingAGoddess(String name) {
+        switch (name) {
+            case "Afrodita":
+                return "Hola soy Afrodita, la diosa del amor y la belleza.";
+            case "Atenea":
+                return "Hola soy Atenea, la diosa de la sabiduría y la guerra estratégica.";
+            case "Artemisa":
+                return "Hola soy Artemisa, la diosa de la caza y la naturaleza salvaje.";
+            case "Hera":
+                return "Hola soy Hera, la diosa de los dioses y de la familia.";
+            case "Deméter":
+                return "Hola soy Deméter, la diosa de la cosecha y la agricultura.";
+            case "Perséfone":
+                return "Hola soy Perséfone, la diosa de la primavera y el inframundo.";
+            default:
+                return "¡no la hemos encontrado aún!";
+        }
+    }
 }
