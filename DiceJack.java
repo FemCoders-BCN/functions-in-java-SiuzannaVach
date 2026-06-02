@@ -32,7 +32,7 @@ public class DiceJack {
         int dado2 = rollDice();
         int dado3 = rollDice();
 
-        System.out.println("\nHas lanzado los dados и ha salido: " + dado1 + " " + dado2 + " " + dado3);
+        System.out.println("\nHas lanzado los dados y ha salido: " + dado1 + " " + dado2 + " " + dado3);
 
         // 6. Imprimir la suma de los números escogidos por el usuario y la suma de los números que salieron en los dados.
         int sumNumbers = num1 + num2 + num3;
